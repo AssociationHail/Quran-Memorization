@@ -1,0 +1,250 @@
+header, h1, h2, h3 {
+  font-family: "Traditional Arabic";
+  font-size: 2.5rem; /* كانت 40px، الآن مرنة ومتناسقة على كل الشاشات */
+}
+
+h1{
+  font-family: "Traditional Arabic";
+  font-size: 3rem; /* كانت 50px، الآن نفس المقاس لكن بوحدة مرنة */
+}
+
+  nav1 button ,nav button {
+  font-family: Tahoma, Arial, sans-serif;
+ font-size: 1rem;
+}
+
+p , ul{
+  font-family: 'Arial';
+  font-size: 1.25rem; /* كانت 25px، الآن مرنة ولا تتضخم على الجوال */
+}
+
+
+
+/* تنسيق عام للصفحة */
+body {
+
+  background-color: #f8f6f3; /* لون خلفية ناعم */
+  direction: rtl; /* لأن الموقع بالعربي */
+  text-align: center; /* توسيط النصوص */
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box; /* يخلي القياسات مضبوطة وما تطلع خارج الصفحة */
+}
+
+
+/* -------------------
+   تنسيق الهيدر (Header)
+------------------- */
+
+header {
+ 
+   background-image: url(images/زخارف.jpeg);
+  display: flex; /* يخلي الشعار والأزرار جنب بعض */
+  justify-content: space-between; /* يوزّعهم يمين ويسار */
+  align-items: center; /* يوسّطهم عموديًا */
+   padding: 15px 5%; /* كانت 20px،  مسافة داخليةالآن أنسب لكل الشاشات */
+  border-bottom: 2px solid #97816A; /* خط خفيف من تحت */
+   position: relative;
+     flex-wrap: wrap; /* لو صغرت الشاشة ينزل المحتوى بدون ما يتداخل */
+}
+
+
+
+/* الشعار */
+header img {
+  width: 160px;
+  height: auto; /* يخلي الصورة تتناسب تلقائيًا */
+}
+
+/* الأزرار داخل nav */
+nav button {
+  background-color: #97816A; /* لون ذهبي ناعم */
+  border: none;    /*بدون ايطار */
+  padding: 10px 18px;
+  margin-left: 8px;
+  border-radius: 25px; /* شكل مستدير ناعم */
+  font-size: 1rem; /* كانت 16px، الآن مرنة لكل الأجهزة */
+  cursor: pointer;
+  transition: 0.3s;
+   white-space: nowrap; /* يمنع الكلمة من الانقسام في الجوال */
+  
+}
+
+/* عند مرور الماوس */
+nav button:hover {
+  background-color:#97816A;
+  color: white;
+}
+
+.box {
+  background-color: #eee3d9; /* لون بيج فاتح */
+  padding: 20px 5%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.6; /* تباعد بين الاسطر */
+  direction: rtl;
+  overflow: hidden;
+ margin-top: 10vh; /* بدل 180px *//* عشان مسافة بين الهيدر والخط البيج*/
+  width: 90%; /* يخلي الصندوق مرن حسب حجم الشاشة */
+}
+
+ul{
+  list-style-type: none;  /* عشان النقاط حقت التعداد تروح */
+ padding: 0; /* يضمن أن القائمة ما تنزاح في الجوال */
+  margin: 0 auto;
+}
+
+
+.box img {
+  width: 350px;
+  max-width: 90%; /* تسمح لها تصغر تلقائيًا فقط إذا الشاشة ضيقة */
+  border-radius: 40%; /* تخلي الصورة دائريه */
+  float: right; /* تخلي الصورة على اليمين */
+  margin-left: 40px;
+  height: auto; /* تحافظ على تناسب الشكل */
+}
+
+
+
+
+.card-container {
+  display:flex;
+   flex-direction: row; /* يخلي الترتيب أفقي */
+  justify-content:center;
+  align-items: flex-start; /* يخلّي الصور من الأعلى */
+  gap: 30px; /* مسافه بين الصور*/
+  margin-top: 30px;  /* مسافة فوق المجموعة */
+  margin-bottom: 30px; /* مسافة تحت المجموعة */
+    flex-wrap: wrap; /* يخليها تنزل للسطر الثاني إذا المساحة ما تكفي */
+}
+
+
+
+/* كل بطاقة (صورة + نصوصها) */
+.card {
+  text-align:center;
+  border: 1px solid #dcd3c2;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  max-width: 90%; /* تمنع خروج البطاقة عن الشاشة في الجوال */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+
+
+}
+
+/* الصورة */
+.card img {
+  width: 100%; /* تملا عرض البطاقه*/
+  height: 200px; /*طول الصوره*/
+  object-fit: cover;/*يقص الصوره بدل مايمدها*/
+  border-radius: 8px;/* يخلي الزوايا ناعمة*/
+}
+
+/* النصوص */
+.card p {
+  font-family: "Traditional Arabic", Tahoma, sans-serif;
+  font-size: 20px;
+  margin: 5px 0;
+  color: #333;
+  text-align:right;
+}
+
+
+
+footer{
+  
+  background-image: url(images/زخارف.jpeg);
+    align-items: center; /* يوسّطهم عموديًا */
+      padding: 20px 5%; /* مسافة داخلية */
+ border-top: 2px solid #97816A;
+}
+
+
+/* تنسيقات الصفحات الفرعية  */
+
+section img {
+  display: flex;
+  align-items:center;
+  width: 600px;         /* تكبير الصورة */
+  height: auto;         /* يحافظ على التناسب */
+  border-radius: 15px;  /* زوايا ناعمة */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ظل خفيف */
+  margin-top: 30px;
+}
+
+
+
+/* النص تحت الصورة */
+section p {
+  font-size: 22px;
+  color: #4b3b2a;
+  line-height: 1.6;
+  margin: 10px 0;
+ text-align:right;
+  
+}
+
+.register button{
+width: 300px;               /* تحديد عرض الزر ليكون 340 بكسل */
+    background-color: #97816A;  /* تحديد لون الخلفية بلون بني فاتح (ذهبي ناعم) */
+    border: none;               /* إزالة الإطار الافتراضي حول الزر */
+    padding: 12px 20px;         /* مساحة داخلية للزر: 12px للأعلى والأسفل، 20px لليمين واليسار */
+    border-radius: 40px;        /* جعل حواف الزر دائرية جدًا ليعطي شكل بيضاوي مستدير */
+    font-size: 22px;            /* تحديد حجم خط النص داخل الزر */
+    cursor: pointer;            /* تغيير شكل مؤشر الماوس إلى يد عند المرور فوق الزر */
+    transition: 0.3s;           /* تفعيل خاصية الانتقال السلس للتغييرات (مثل التمرير) لمدة 0.3 ثانية */
+    
+    /* خصائص تحديد الموضع (اليسار والرفع للأعلى) */
+    display: block;             /* جعل الزر يأخذ سطرًا كاملاً، وهو ضروري لتطبيق خاصية margin للتوسيط أو التحريك */
+    margin-right: auto;         /* دفع الزر إلى أقصى اليسار المتاح داخل الحاوية الأب */
+    margin-left: 20px;          /* إضافة مسافة 20 بكسل بين حافة الزر وحافة اليسار */
+    
+    position: relative;         /* تمكين خاصية التحريك (offset) بالنسبة لموضعه الطبيعي */
+    bottom: 15px;               /* رفع الزر للأعلى بمقدار 20 بكسل من موضعه الطبيعي */   
+    margin-top: 40px;
+  }
+
+
+/* عند مرور الماوس */
+.register button {
+  background-color:#97816A;
+  color:black;
+}
+
+
+
+/* تنسيق صفحة التسجيل  */
+
+
+/* القسم الرئيسي للفورم */
+.register-form {
+  text-align: right ;     /* يجعل النصوص على يمين الصفحة */
+  margin: 50px auto;     /* مسافة من الأعلى وتوسيط العنصر بالصفحة */
+  width: 80% ;   
+   max-width: 600px;            /* يجعل عرض الفورم 70% من عرض الصفحة */
+}
+
+/* كل مجموعة إدخال (label + input) */
+.input-group {
+  margin-bottom: 18px;   /* مسافة بين كل مجموعة والثانية */
+}
+
+/* تنسيق العناوين (الأسماء ورقم الجوال...) */
+.input-group label {
+  display: block;        /* يجعل النص يظهر في سطر مستقل فوق المربع */
+  margin-bottom: 6px;    /* مسافة بسيطة بين النص والمربع */
+  font-size: 18px;       /* حجم الخط */
+  color: #4b3b2a;        /* لون النص (بني فاتح) */
+}
+
+/* مربعات الإدخال */
+.input-group input {
+  width: 100%;           /* ياخذ عرض كامل للمجموعة */
+  padding: 10px;         /* مسافة داخلية داخل المربع */
+  border: 1px solid #aaa;/* إطار خفيف رمادي */
+  border-radius: 8px;    /* زوايا ناعمة */
+  font-size: 16px;       /* حجم النص داخل المربع */
+}
+

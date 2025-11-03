@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<link rel="stylesheet" href="style.css">
+<title>التسجيل</title>
+ 
+</head>
+
+<body>
+ 
+    <header>
+
+   <img src="images/شعار.png" alt=" شعار الجمعية" width="150">
+
+   <nav>
+    <a href="index.html" ><button>الصفحةالرئسية</button></a>
+   </nav>
+
+    </header>
+
+
+ <section class="register-form">
+    <form> <!-- بداية الفورم = منطقة إدخال بيانات المستخدم -->
+
+        
+      <!-- مجموعة إدخال الاسم الأول -->
+      <div class="input-group">
+        <label>الاسم الأول :</label> <!-- النص اللي يوضح المطلوب -->
+        <input type="text" required> <!-- مربع إدخال نص (مطلوب تعبئته) -->
+      </div>
+
+      <!-- مجموعة إدخال الاسم الأخير -->
+      <div class="input-group">
+        <label>الاسم الأخير :</label>
+        <input type="text" required>
+      </div>
+
+      <!-- مجموعة إدخال رقم الجوال -->
+      <div class="input-group">
+        <label>رقم الجوال :</label>
+        <input type="tel" required> <!-- مربع إدخال أرقام الهاتف -->
+      </div>
+
+      <!-- مجموعة إدخال نوع الحلقة -->
+      <div class="input-group">
+        <label>نوع الحلقة :</label>
+        <input type="text">
+      </div>
+
+ <div class="register"> 
+    <button type="button" onclick="checkForm()">حجز مقعد</button>
+     </div>
+
+   </form>
+  </section>
+
+
+
+   
+
+      <script src="script.js"></script>
+
+<footer>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+
+</html>
