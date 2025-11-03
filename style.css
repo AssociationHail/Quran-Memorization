@@ -59,6 +59,7 @@ header img {
 /* الأزرار داخل nav */
 nav button {
   background-color: #97816A; /* لون ذهبي ناعم */
+  color: black;
   border: none;    /*بدون ايطار */
   padding: 10px 18px;
   margin-left: 8px;
