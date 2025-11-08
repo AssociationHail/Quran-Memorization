@@ -1,11 +1,11 @@
-header, h1, h2, h3 {
+header, h2, h3 {
   font-family: "Traditional Arabic";
   font-size: 2.5rem; /* كانت 40px، الآن مرنة ومتناسقة على كل الشاشات */
 }
 
 h1{
   font-family: "Traditional Arabic";
-  font-size: 3rem; /* كانت 50px، الآن نفس المقاس لكن بوحدة مرنة */
+  font-size: 2.5rem; /* كانت 50px، الآن نفس المقاس لكن بوحدة مرنة */
 }
 
   nav1 button ,nav button {
